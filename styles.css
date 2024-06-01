@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .fv {
@@ -47,6 +48,13 @@ body {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
+}
+
+.detailed-info__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 576px) {
@@ -265,7 +273,8 @@ body {
 
 /* Additional info styles */
 .additional-info {
-  flex: 1 1 40%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .additional-info__education {
@@ -321,4 +330,54 @@ body {
     margin-right: 0.5em;
     border: black 1px solid;
     border-radius: 50%;
+}
+
+.additional-info__hobbies {
+  margin-bottom: 20px;
+}
+
+.additional-info__hobbies-header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.additional-info__hobbies-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.additional-info__hobbies-item {
+  margin-right: 10px;
+  width: 64px;
+}
+
+.additional-info__hobbies-item-icon path {
+  fill: var(--icon-color);
+}
+
+.additional-info__programming-languages {
+  margin-bottom: 20px;
+}
+
+.additional-info__programming-languages-header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.additional-info__programming-languages-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.additional-info__programming-languages-item-logo {
+  width: 64px;
+  height: 64px;
 }
