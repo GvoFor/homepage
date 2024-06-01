@@ -166,9 +166,20 @@ body {
   margin-bottom: 15px;
 }
 
-.skills__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
+.skills__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__item {
+  color: var(--primary-text-color);
+  background-color: var(--text-decoration-color);
+  border-radius: 20px;
+  border: 0px solid;
+  padding: 5px 10px;
+  margin: 5px;
 }
 
 /* Experience styles */
