@@ -116,6 +116,7 @@ body {
 
 .contact-info__item-icon path {
   fill: var(--icon-color);
+  transition: fill 200ms linear;
 }
 
 .contact-info__item-icon {
@@ -130,6 +131,36 @@ body {
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+}
+
+#city:hover path,
+#city:focus path {
+    fill: #c71435;
+}
+
+#email:hover path,
+#email:focus path {
+    fill: #db8897;
+}
+
+#phone:hover path,
+#phone:focus path {
+    fill: #58944b;
+}
+
+#telegram:hover path,
+#telegram:focus path {
+    fill: #24a1de;
+}
+
+#linkedin:hover path,
+#linkedin:focus path {
+    fill: #0077B5;
+}
+
+#github:hover path,
+#github:focus path {
+    fill: #171515;
 }
 
 /* Intro styles */
