@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .fv {
@@ -47,6 +48,13 @@ body {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
+}
+
+.detailed-info__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 576px) {
@@ -116,6 +124,7 @@ body {
 
 .contact-info__item-icon path {
   fill: var(--icon-color);
+  transition: fill 200ms linear;
 }
 
 .contact-info__item-icon {
@@ -130,6 +139,36 @@ body {
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+}
+
+#city:hover path,
+#city:focus path {
+    fill: #c71435;
+}
+
+#email:hover path,
+#email:focus path {
+    fill: #db8897;
+}
+
+#phone:hover path,
+#phone:focus path {
+    fill: #58944b;
+}
+
+#telegram:hover path,
+#telegram:focus path {
+    fill: #24a1de;
+}
+
+#linkedin:hover path,
+#linkedin:focus path {
+    fill: #0077B5;
+}
+
+#github:hover path,
+#github:focus path {
+    fill: #171515;
 }
 
 /* Intro styles */
@@ -166,9 +205,20 @@ body {
   margin-bottom: 15px;
 }
 
-.skills__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
+.skills__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__item {
+  color: var(--primary-text-color);
+  background-color: var(--text-decoration-color);
+  border-radius: 20px;
+  border: 0px solid;
+  padding: 5px 10px;
+  margin: 5px;
 }
 
 /* Experience styles */
@@ -223,7 +273,8 @@ body {
 
 /* Additional info styles */
 .additional-info {
-  flex: 1 1 40%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .additional-info__education {
@@ -269,4 +320,64 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2em;
+}
+
+.additional-info__language-item-icon {
+    width: 1.5em;
+    margin-right: 0.5em;
+    border: black 1px solid;
+    border-radius: 50%;
+}
+
+.additional-info__hobbies {
+  margin-bottom: 20px;
+}
+
+.additional-info__hobbies-header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.additional-info__hobbies-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.additional-info__hobbies-item {
+  margin-right: 10px;
+  width: 64px;
+}
+
+.additional-info__hobbies-item-icon path {
+  fill: var(--icon-color);
+}
+
+.additional-info__programming-languages {
+  margin-bottom: 20px;
+}
+
+.additional-info__programming-languages-header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.additional-info__programming-languages-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.additional-info__programming-languages-item-logo {
+  width: 64px;
+  height: 64px;
 }
