@@ -311,4 +311,14 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2em;
+}
+
+.additional-info__language-item-icon {
+    width: 1.5em;
+    margin-right: 0.5em;
+    border: black 1px solid;
+    border-radius: 50%;
 }
